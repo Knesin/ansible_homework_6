@@ -1,0 +1,8 @@
+---
+- name: Test module
+  hosts: localhost
+  tasks:
+    - name: Create text file
+      my_own_module:
+        path: /tmp/greeting.txt
+        content: "Hello, Ansible!"
